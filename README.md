@@ -1,4 +1,5 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+For firebase firestore configuration please refer to the following link;
+https://github.com/prescottprue/react-redux-firebase
 
 ## Available Scripts
 
