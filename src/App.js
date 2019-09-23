@@ -2,13 +2,19 @@ import React from 'react';
 import './App.css';
 import AppNavbar from "./components/layout/AppNavbar";
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
+import Dashboard from "./components/layout/Dashboard";
 
 function App() {
   return (
       <Router>
     <div className="App">
       <AppNavbar />
-      <h1>Hello</h1>
+      <div className="container">
+        <Switch>
+          <Route exact path="/" component={Dashboard} />
+
+        </Switch>
+      </div>
     </div>
       </Router>
   );
