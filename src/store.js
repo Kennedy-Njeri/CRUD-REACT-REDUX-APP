@@ -12,7 +12,7 @@ const firebaseConfig = {
     projectId: "react-app-2cedf",
     storageBucket: "react-app-2cedf.appspot.com",
     messagingSenderId: "1080338787159",
-    appId: "1:1080338787159:web:d7a340f3604a5b17562c12"
+
 }
 
 
@@ -27,14 +27,14 @@ const rrfConfig = {
 firebase.initializeApp(firebaseConfig)
 
 // Init firebase instance
-const firestore = firebase.firestore()
+//const firestore = firebase.firestore()
 
 
 // Add reactReduxFirebase enhancer when making store creator
 const createStoreWithFirebase = compose(
     reactReduxFirebase(firebase, rrfConfig), // firebase instance as first argument
     reduxFirestore(firebase) // <- needed if using firestore
-)(createStore)
+)(createStore);
 
 
 // Add firebase to reducers
