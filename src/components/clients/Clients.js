@@ -8,14 +8,11 @@ import Spinner from "../layout/Spinner";
 
 
 
-
 class Clients extends Component {
 
     state = {
         totalOwed: null
     }
-
-
 
     static getDerivedStateFromProps(props, state) {
 
@@ -24,8 +21,6 @@ class Clients extends Component {
 
         try {
             if(state) {
-
-
 
                 const total = clients.reduce((total, client) => {
 
