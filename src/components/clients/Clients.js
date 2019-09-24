@@ -4,6 +4,7 @@ import {compose} from 'redux'
 import {connect} from 'react-redux'
 import {firestoreConnect} from 'react-redux-firebase'
 import PropTypes from 'prop-types';
+import Spinner from "../layout/Spinner";
 
 
 
@@ -53,7 +54,7 @@ class Clients extends Component {
             );
 
         } else {
-            return <h1>Loading..</h1>
+            return <Spinner/>
         }
     }
 }
